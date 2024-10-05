@@ -11,6 +11,7 @@ function page() {
         </Button>
       </div>
     </MantineProvider>
+    
   )
 }
 
