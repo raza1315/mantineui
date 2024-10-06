@@ -1,17 +1,13 @@
+"use client"
 import React from 'react'
-import { MantineProvider } from '@mantine/core';
-import { Button } from '@mantine/core';
-import { Text, Avatar, Group } from '@mantine/core';
+
 function page() {
   return (
-    <MantineProvider>
-      <div className="h-screen w-full flex justify-center items-center ">
-        <Button variant="default" color="blue" size="md">
-          Hello Mantine
-        </Button>
-      </div>
-    </MantineProvider>
-    
+    <div className='h-screen w-full flex justify-center items-center bg-black'>
+      <button
+        className=' text-white text-3xl border-2 border-white px-5 py-5 rounded-full'
+        onClick={() => window.location.href = "http://localhost:3000/auth/google"}>sign in with google</button>
+    </div>
   )
 }
 
